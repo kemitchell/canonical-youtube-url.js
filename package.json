@@ -2,7 +2,7 @@
   "type": "module",
   "name": "canonical-youtube-url",
   "version": "0.0.0",
-  "description": "",
+  "description": "normalize YouTube URLs to https://www.youtube.com/watch?v={id}{&t}",
   "author": "Kyle E. Mitchell <kyle@kemitchell.com> (https://kemitchell.com/)",
   "repository": "kemitchell/canonical-youtube-url.js",
   "license": "BlueOak-1.0.0",
