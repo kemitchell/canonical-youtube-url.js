@@ -14,6 +14,11 @@ const examples = [
     'https://www.youtube.com/watch?v=IgJ_09Rznfg&t=195'
   ],
   [
+    'passes through youtu.be URLs without video IDs',
+    'https://youtu.be/',
+    'https://youtu.be/'
+  ],
+  [
     'removes list and index parameters',
     'https://www.youtube.com/watch?v=J3Zic-HwyCk&list=WL&index=21',
     'https://www.youtube.com/watch?v=J3Zic-HwyCk'
