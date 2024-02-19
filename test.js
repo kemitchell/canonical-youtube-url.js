@@ -29,6 +29,16 @@ const examples = [
     'https://www.youtube.com/watch?v=J3Zic-HwyCk'
   ],
   [
+    'replaces Shorts link with YouTube link',
+    'https://www.youtube.com/shorts/5my6xTh2M48',
+    'https://www.youtube.com/watch?v=5my6xTh2M48'
+  ],
+  [
+    'passes non-video YouTube URLs through',
+    'https://www.youtube.com/feed/history',
+    'https://www.youtube.com/feed/history'
+  ],
+  [
     'passes non-YouTube URLs through',
     'https://example.com',
     'https://example.com'

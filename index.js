@@ -19,7 +19,17 @@ export default argument => {
     hostname === 'youtube-nocookie.com' ||
     hostname === 'youtube.com'
   ) {
-    const v = searchParams.get('v')
+    let v
+    if (pathname === '/watch') {
+      v = searchParams.get('v')
+    } else if (pathname.startsWith('/shorts/')) {
+      const match = /^\/shorts\/([a-zA-Z0-9\-_]+)$/.exec(pathname)
+      if (match) {
+        v = match[1]
+      } else {
+        return argument
+      }
+    }
     if (!v) return argument
     const newParams = new URLSearchParams()
     newParams.set('v', v)
